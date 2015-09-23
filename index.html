@@ -6,76 +6,68 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-      
-      <nav class="header_nav">
-          <div class="header_nav_content">
-          
-              <div class="header_logo">
-                  <a href="/">Pink</a>
-              </div>
-
-              <ul>
+	<header class="main_header">
+		<figure>
+			<a href="/" title="Главная"><img src="img/logo_header.png" width="74" height="23" alt="PINK"></a>
+        </figure>
+		<a href="" class="tab_menu"></a>
+        <nav class="main_nav"> 
+            <ul>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Конкурс</a></li>
-              </ul>
-
-              <input type="checkbox" id="nav_icon" class="nav_icon" /> 
-              <label for="nav_icon"></label>
-              
-          </div>
-      </nav>
+            </ul>
+        </nav>       
+    </header>
       
-      <div class="main">
-        
-          <div class="intro">
-            <div class="intro_content">
-                <h1>Взгляните на жизнь иначе!</h1>        
-                      
-                <div class="download">
-                     <a href="#" class="btn download_btn">Скачать приложение</a>
-
+    <div class="main">
+        <section class="intro">
+            <div class="center_wrapper">          
+                <h1>Взгляните на жизнь иначе!</h1>   
+            </div>    
+              
+            <div class="download">
+                <div class="center_wrapper">
+                    <a href="#" class="btn download_btn">Скачать приложение</a>
                     <div class="download_gadget">
                         <a href="#"><img src="img/logo_apple.png" width="46" height="56" alt="Лого apple"></a>
                         <a href="#"><img src="img/logo_andro.png" width="42" height="46" alt="Лого android"></a>
                         <a href="#"><img src="img/logo_win.png" width="44" height="42" alt="Лого windows"></a>
                     </div> 
-                    <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span> 
+                    <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p> 
                 </div>
-                
-              </div>
-          </div>
+            </div> 
+        </section>
           
-          <div class="info">
-              <div class="info_content">
-                  
-                  <div class="info_quest">
-                    <span>Устали от серости мегаполиса?</span>
-                    <span>Нам есть, что вам предложить!</span>
-                  </div>
 
-                  <div class="info_advant">
-                      <div class="info_advant_item">
-                        <h2>Поднимает настроение</h2>
-                        <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-                    </div>
-                      <div class="info_advant_item">
-                        <h2>Меняет мир вокруг</h2>
-                        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                    </div>  
-                      <div class="info_advant_item">
-                        <h2>Заводит новых друзей</h2>
-                        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-                    </div>                    
-                  </div>
-              
+        <div class="info_content">
+            <div class="center_wrapper">
+                <p>Устали от серости мегаполиса?</p>
+                <p>Нам есть, что вам предложить!</p>
             </div>
-          </div> 
+        </div>
           
-          <div class="reviews">
-            <div class="reviews_slider">
-                
+        <div class="info_advant">
+            <div class="center_wrapper">
+                <div class="info_advant_item">
+                    <h2>Поднимает настроение</h2>
+                    <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+                </div>
+                <div class="info_advant_item">
+                    <h2>Меняет мир вокруг</h2>
+                    <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>  
+                <div class="info_advant_item">
+                    <h2>Заводит новых друзей</h2>
+                    <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>   
+            </div>     
+        </div>
+
+
+        <section class="reviews">
+            <div class="center_wrapper">
                 <div class="reviews_slider_slides">
                     <div class="slide_item">
                         <span>Николай Петров</span>
@@ -90,17 +82,15 @@
                         <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div>                    
                 </div>
-                
                 <div class="reviews_slider_control">
                     <i class="active"></i>
                     <i></i>
                     <i></i>
-                </div>  
-                
+                </div>
             </div>
-          </div>
+        </section>
           
-          <div class="price">
+        <div class="price">
             <div class="price_table">
                 <table>
                     <tr>
@@ -145,35 +135,25 @@
                     <i></i>
                 </div>
             </div>
-          </div>
+        </div>
           
-          <div class="contacts"> <!--Дизайнер странно сделал макет главной, без подвала. То есть на других страницах он есть (логотип дублируется, иконки соц.сете, кто разработчки, а на главной просто заказчивается картой. Поэтому на главной не делаю тег footer)-->
-          
-              <div class="contacts_content">
-                  
-                <h3>Остались вопросы?<br>
-                Свяжитесь с нами!</h3>
-              
-                <p>Звоните:<br>
+        <section class="contacts">
+            <div class="center_wrapper">
+                <div class="contacts_header">Остались вопросы?</div>
+                <div class="contacts_header">Свяжитесь с нами!</div>
+				<div>Звоните:</div>
                 <span>+7 (812) 555-66-66</span>
-                </p>
-                 <p>Пишите:<br>
+                <div>Пишите:</div>
                 <span>mail@htmlacademy.ru</span>
-                </p> 
-                 <p>Приезжайте в гости:<br>
+                <div>Приезжайте в гости:</div>
                 <span>ул. Большая Конюшенная, 19/8</span>
-                </p> 
-                  
-              </div>            
-              
-              <div class="contacts_map">
-                <!-- Тут будет вставлена карта фреймом-->
-              </div>
-          </div>
-          
-      </div>
-
+            </div>   
+        </section>  
+         <div class="contacts_map">
+            <!-- Тут будет вставлена карта фреймом-->
+         </div>
+  
+    </div>
     <!-- <script src="js/script.js"></script> -->
-
   </body>
 </html>

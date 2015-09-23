@@ -6,181 +6,166 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-      
-      <nav class="header_nav">
-          <div class="header_nav_content">
-          
-              <div class="header_logo">
-                  <a href="/">Pink</a>
-              </div>
-
-              <ul>
+    <header class="main_header">
+		<figure>
+			<a href="/" title="Главная"><img src="img/logo_header.png" width="74" height="23" alt="PINK"></a>
+        </figure>
+		<a href="" class="tab_menu"></a>
+        <nav class="main_nav"> 
+            <ul>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Конкурс</a></li>
-              </ul>
-
-              <input type="checkbox" id="nav_icon" class="nav_icon" />
-              <label for="nav_icon"></label>
-              
-          </div>
-      </nav>
-      
-      <div class="main">
-        
-          <div class="intro">
-            <div class="intro_content">
+            </ul>
+        </nav>       
+    </header>
+    <div class="main">
+        <div class="intro">
+            <div class="center_wrapper">
                 <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>               
-              </div>
-          </div>
-          
-          <div class="info">
-            <div class="info_content">
-                <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-                
-                <form class="main_form"  action="#" method="post" name="main_form"> <!--На курсах перенос в форме делается с помощью br, поэтому и использую тут также-->
-                                
-                    <label>Имя:*<br>
+            </div>
+        </div>
+        <form class="main_form" id="main_form" action="#" method="post" name="main_form">  
+			<div class="info">
+				<div class="center_wrapper">
+					<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+					<label>Имя:*<br>
                     <input type="text" name="name" placeholder="Введите ваше имя" required></label><br>
                     <label>Фамилия:*<br>
                     <input type="text" name="lastname" placeholder="Укажите фамилию" required></label><br>  
                     <label>Отчество:<br>
-                    <input type="text" name="name" placeholder="Ну и отчество тоже"></label><br> 
-                    
-                    <div class="main_form_gadget">
-                        С каким приложением путешествовали? *<br>
-                        <label><input type="radio" name="gadget" value="Pink для iOS" class="aktiv">Pink для iOS</label><br>                   
-                        <label><input type="radio" name="gadget" value="Pink на Android" class="aktiv">Pink на Android</label><br>
-                        <label><input type="radio" name="gadget" value="Windows Phone" class="aktiv">Windows Phone</label>
-                    </div>
-                    
-                    <div class="main_form_day">
-                        Когда вы путешествовали?*<br>
-                        <input type="text" name="beginning"  id="beginning" placeholder="1 апреля 2015"  required><br> 
-                        <label for="beginning">Дата выезда</label><br> 
-                        
-                        <span class="btn_del">-</span>
-                        <input type="text" name="duration" id="duration" placeholder="10" required >
-                        <span class="btn_plus">+</span><br> 
-                        <label for="duration">Продолжительность</label><br>
-                        
-                        <input type="text" name="beginning"  id="ending" placeholder="1 апреля 2015"  required readonly><br> <!--По макету я так поняла это поле сразу серое, не редактируется и выщитывается автоматом-->
-                        <label for="ending">Дата возвращения</label><br> 
-                    </div>
-                    
-                    <div class="main_form_friends">
-                        <label for="number_friends">Количество попутчиков*</label><br>
-                        <span class="btn_del">-</span>
-                        <input type="text" name="number_friends" id="number_friends" placeholder="2 чел" required >
-                        <span class="btn_plus">+</span><br>
-                        
-                        <div class="main_form_friends_info">
-                            <label for="name_friend_1" ><span>№</span>Имя:*</label><br>
-                            <span class="number">1</span><input type="text" name="name_friend_1" id="name_friend_1" placeholder="Введите ваше имя" required><br>
-                            <label>Прозвище<br>
-                            <input type="text" name="nikname_friend_2" class="nikname" placeholder="Ну как же без этого!"></label><br>
-                            <label for="name_friend_2" ><span>№</span>Имя:*</label><br>
-                            <span class="number">2</span><input type="text" name="name_friend_2" id="name_friend_2" placeholder="Введите ваше имя" required><br>
-                            <label>Прозвище<br>
-                            <input type="text" name="nikname_friend_2" class="nikname" placeholder="Ну как же без этого!"></label><br>
-                        </div>
-                    </div>
-                    
-                    <div class="main_form_progress">
-                        <span>Ваши безбашенные достижения в путешествии</span><br>
-                            <label><input type="checkbox" name="progress" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</label><br>
-                            <label><input type="checkbox" name="progress" value="Обгорел на пляже"  checked>Обгорел на пляже</label><br>
-                            <label><input type="checkbox" name="progress" value="Видел Чака Норриса">Видел Чака Норриса</label><br>
-                            <label><input type="checkbox" name="progress" value="Накупил сувениров">Накупил сувениров</label><br>
-                            <label><input type="checkbox" name="progress" value="Удержал башню"  checked>Удержал башню</label><br>
-                            <label><input type="checkbox" name="progress" value="Разгромил отель">Разгромил отель</label><br>
-                    </div>
-                        
-                        
-                    <div class="main_form_foto">
-                            <span>Ваши фотографии из поездки*</span>
-                            
-                            <a class="main_form_btn btn_foto">Загрузить фото</a>
-                            
-                            <div class="main_form_foto_content">
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_1.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-1.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_2.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-2.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_3.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-3.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_4.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-4.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_5.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-5.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_6.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-6.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_7.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-7.JPG</span>
-                                </div>
-                                <div class="minifoto_item">
-                                    <img src="img/mini_foto_8.jpg" width="67" height="68" alt="миниатюра фото">
-                                    <span>IMG-8.JPG</span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    <input type="submit" value="Отправить форму">
-                        
-                    <p><span>*</span> - обязательные поля</p>                    
-                    
-                </form>
-              
+                    <input type="text" name="secondname" placeholder="Ну и отчество тоже"></label><br> 
+				</div>
+			</div>
+            <div class="main_form_gadget">
+				<div class="center_wrapper">
+                    С каким приложением путешествовали? *<br>
+                    <label><input type="radio" name="gadget" value="Pink для iOS" class="aktive" >Pink для iOS</label><br>                   
+                    <label><input type="radio" name="gadget" value="Pink на Android" >Pink на Android</label><br>
+                    <label><input type="radio" name="gadget" value="Windows Phone" >Windows Phone</label>
+				</div>		
             </div>
-          </div> 
-
-          
-      </div>
-
-      <footer class="main_footer">
-        <div class="main_footer_logo">PINK</div>
-          
+            <div class="main_form_day">
+				<div class="center_wrapper">
+                    Когда вы путешествовали?*<br>
+                    <input type="text" name="beginning"  id="beginning" placeholder="1 апреля 2015"  required><br> 
+                    <label for="beginning">Дата выезда</label><br> 
+                    <span class="btn_del">-</span>
+                    <input type="text" name="duration" id="duration" placeholder="10" required >
+                    <span class="btn_plus">+</span><br> 
+                    <label for="duration">Продолжительность</label><br>
+                    <input type="text" name="beginning"  id="ending" placeholder="1 апреля 2015"  required readonly><br> <!--По макету я так поняла это поле сразу серое, не редактируется и выщитывается автоматом-->
+                    <label for="ending">Дата возвращения</label><br> 
+				</div>		
+            </div>
+            <div class="main_form_friends">
+				<div class="center_wrapper">
+                    <label for="number_friends">Количество попутчиков*</label><br>
+                    <span class="btn_del">-</span>
+                    <input type="text" name="number_friends" id="number_friends" placeholder="2 чел" required >
+                    <span class="btn_plus">+</span><br>
+                    <div class="main_form_friends_info">
+						<label for="name_friend_1" ><span>№</span>Имя:*</label><br>
+						<span class="number">1</span><input type="text" name="name_friend_1" id="name_friend_1" placeholder="Введите ваше имя" required><br>
+						<label>Прозвище<br>
+						<input type="text" name="nikname_friend_2" class="nikname" placeholder="Ну как же без этого!"></label><br>
+						<label for="name_friend_2" ><span>№</span>Имя:*</label><br>
+						<span class="number">2</span><input type="text" name="name_friend_2" id="name_friend_2" placeholder="Введите ваше имя" required><br>
+						<label>Прозвище<br>
+						<input type="text" name="nikname_friend_2" class="nikname" placeholder="Ну как же без этого!"></label><br>
+                    </div>
+				</div>		
+            </div>
+            <div class="main_form_progress">
+				<div class="center_wrapper">
+                    <p>Ваши безбашенные достижения в путешествии</p>
+                    <label><input type="checkbox" name="progress" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</label><br>
+                    <label><input type="checkbox" name="progress" value="Обгорел на пляже"  checked>Обгорел на пляже</label><br>
+                    <label><input type="checkbox" name="progress" value="Видел Чака Норриса">Видел Чака Норриса</label><br>
+                    <label><input type="checkbox" name="progress" value="Накупил сувениров">Накупил сувениров</label><br>
+                    <label><input type="checkbox" name="progress" value="Удержал башню"  checked>Удержал башню</label><br>
+                    <label><input type="checkbox" name="progress" value="Разгромил отель">Разгромил отель</label><br>
+				</div>			
+            </div>
+			<div class="main_form_foto">
+				<div class="center_wrapper">
+                    <p>Ваши фотографии из поездки*</p>
+						<input name="fotos" type="file" value="Загрузить фото" class="main_form_btn btn_foto">
+                        <div class="main_form_foto_content">
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_1.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-1.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_2.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-2.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_3.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-3.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_4.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-4.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_5.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-5.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_6.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-6.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_7.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-7.JPG</span>
+                            </div>
+                            <div class="minifoto_item">
+                                <img src="img/mini_foto_8.jpg" width="67" height="68" alt="миниатюра фото">
+								<a href="#" class="minifoto_item_dell"></a>
+                                <span>IMG-8.JPG</span>
+                            </div>
+                        </div>
+				</div>			
+			</div>
+            <button type="submit" name="main_button_form" form="main_form">Отправить форму</button>
+            <div><span>*</span> - обязательные поля</div>                    
+        </form>
+	</div>
+	<footer class="main_footer">
+        <figure class="main_footer_logo">
+			<a href="/"><img src="img/footer_logo.png" width="145" height="40" alt="Логотип PINK"></a>
+		</figure>
         <div class="main_footer_social">
-            <a href="#" target="_blank" >T</a> <!-- Иконки скорее всего либо фоном стилизовать либо иконочным шрифтом-->
+            <a href="#" target="_blank" >T</a>
             <a href="#" target="_blank" >F</a>
             <a href="#" target="_blank" >Y</a>
         </div>
-          
-        <p>Разработано <a href="https://htmlacademy.ru/"  target="_blank" ><img src="img/htmla.png" width="27" height="34" alt="Html академия" ></a></p>  
-      </footer>
-      
-      <div class="popup_ok">
+        <div>Разработано <a href="https://htmlacademy.ru/"  target="_blank" ><img src="img/htmla.png" width="27" height="34" alt="Html академия" ></a></div>  
+    </footer>  
+    <div class="popup_ok">
         <div class="popup_ok_content">
             <h2>Ваша заявка отправлена</h2>
             <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
         оповестим вас.</p>
         </div>  
         <a href="#" class="main_form_btn btn_close">Закрыть окно</a>  
-      </div>
-      
-      <div class="popup_no">
+    </div>  
+    <div class="popup_no">
         <div class="popup_no_content">
             <h2>Что-то пошло не так!</h2>
             <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>  
         <a href="#" class="main_form_btn btn_close">Ок</a>  
-      </div>      
+    </div>      
     <!-- <script src="js/script.js"></script> -->
-
   </body>
 </html>
