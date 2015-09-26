@@ -26,25 +26,25 @@
       
       
       
-    <main class="main">
+    <main class="index-main">
         
         <section class="intro">
-            <div class="wrap">          
+            <div class="center-wrapper">          
                 <h1 class="intro__title">Взгляните на жизнь иначе!</h1>   
             </div>    
               
-            <div class="download">
-                <div class="wrap">
+            <div class="app-download">
+                <div class="center-wrapper">
                     <a href="#" class="btn btn--download">Скачать приложение</a>
-                    <div class="download__app">
-                        <!--Тут менять цвет у иконок ниже при навидении как? Лучше img заменить на фоновые картинки, чтобы через наведение на ссылку фон менять? Или есть какая-то другая техника-->
-                        <ul class="download__app-list">
-                            <li class="download__app-item"><a href="#"><img src="img/logo_apple.png" width="46" height="56" alt="Лого apple"></a></li>
-                            <li class="download__app-item"><a href="#"><img src="img/logo_andro.png" width="42" height="46" alt="Лого android"></a></li>
-                            <li class="download__app-item"><a href="#"><img src="img/logo_win.png" width="44" height="42" alt="Лого windows"></a></li>
+                    <div class="app-download__apps">
+                        <ul class="app-download__list">
+                            <!--Иконки пока оставляю так, жду лекцию про svg -->
+                            <li class="app-download__item"><a href="#"><img src="img/logo_apple.png" width="46" height="56" alt="Лого apple"></a></li>
+                            <li class="app-download__item"><a href="#"><img src="img/logo_andro.png" width="42" height="46" alt="Лого android"></a></li>
+                            <li class="app-download__item"><a href="#"><img src="img/logo_win.png" width="44" height="42" alt="Лого windows"></a></li>
                         </ul>
                     </div> 
-                    <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p> 
+                    <p class="app-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p> 
                 </div>
             </div> 
         </section>
@@ -52,26 +52,26 @@
 
         
         <div class="info-content">
-            <div class="wrap">
-                <div>Устали от серости мегаполиса?</div>
-                <div>Нам есть, что вам предложить!</div>
+            <div class="center-wrapper">
+                <div class="info-content__title">Устали от серости мегаполиса?</div>
+                <div class="info-content__title">Нам есть, что вам предложить!</div>
             </div>
         </div>
           
         
         
         <div class="feature">
-            <div class="feature__wrapper">
+            <div class="center-wrapper">
                 <div class="feature__item">
-                    <h2 class="feature__header">Поднимает настроение</h2>
+                    <h2 class="feature__title">Поднимает настроение</h2>
                     <p class="feature__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
                 </div>
                 <div class="feature__item">
-                    <h2 class="feature__header">Меняет мир вокруг</h2>
+                    <h2 class="feature__title">Меняет мир вокруг</h2>
                     <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>  
                 <div class="feature__item">
-                    <h2 class="feature__header">Заводит новых друзей</h2>
+                    <h2 class="feature__title">Заводит новых друзей</h2>
                     <p class="feature__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
                 </div>   
             </div>     
@@ -80,21 +80,20 @@
         
 
         <section class="reviews">
-            <div class="wrap">
+            <div class="center-wrapper">
                 <div class="reviews-slider">
                     <div class="reviews-slide__item">
-                        <span class="reviews-slide__header">Николай Петров</span>
+                        <span class="reviews-slide__author">Николай Петров</span>
                         <blockquote class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» </blockquote>
                     </div>
                     <div class="reviews-slide__item">
-                        <span class="reviews-slide__header">Николай Петров 2</span>
+                        <span class="reviews-slide__author">Николай Петров 2</span>
                         <blockquote class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div>
                     <div class="reviews-slide__item">
-                        <span class="reviews-slide__header">Николай Петров 3</span>
+                        <span class="reviews-slide__author">Николай Петров 3</span>
                         <blockquote class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div> 
-                    <!--Мне кажется тут в навигации слайдера у аквтиного пункта можно поставить не модификатор, а элемент, меньше кода, и в лекции Громов так делал. Или можно  написать прямо так: <i class="pagination__item--active"> ????-->
                     <div class="pagination">
                         <i class="pagination__item-active"></i>
                         <i></i>
@@ -107,7 +106,7 @@
         
         
         <div class="price-table">
-            <div class="wrap">
+            <div class="center-wrapper">
                 <div class="price-slider">
                     <ul class="price-slider__col">
                         <li class="price-slider__col-header">База<br>
@@ -143,12 +142,11 @@
         </div>
           
         <section class="contacts">
-            <div class="wrap">
+            <div class="center-wrapper">
                 <div class="contacts__header">
-                    <span>Остались вопросы?</span>
-                    <span>Свяжитесь с нами!</span>
+                    <div class="contacts__title">Остались вопросы?</div>
+                    <div class="contacts__title">Свяжитесь с нами!</div>
                 </div>
-                <!--В адресе мне нравится больше использовать br и хочется каждый элемент адрес заключить в отдельный див-->
                 <div class="contacts__content">
                     <div class="contacts__tel">Звоните:<br>
                         <span>+7 (812) 555-66-66</span>
